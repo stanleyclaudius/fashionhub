@@ -13,7 +13,7 @@ const generatePage = (pageName: string) => {
 
 const PageRender = () => {
   const { page, id } = useParams()
-  let pageName = id ? `${page}/id` : `${page}`
+  let pageName = id ? `${page}/[id]` : `${page}`
   return generatePage(pageName)
 }
 

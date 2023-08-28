@@ -45,7 +45,7 @@ const Navbar = () => {
           <LiaUserCircle className='text-2xl cursor-pointer' />
         </div>
         
-        <div ref={shopRef} className={`${!openShop ? 'opacity-0 pointer-events-none' : 'opacity-1 pointer-events-auto'} absolute w-full -bottom-80 flex text-sm shadow-2xl rounded-lg border border-gray-200 p-3 bg-white transition-opacity`}>
+        <div ref={shopRef} className={`${!openShop ? 'opacity-0 pointer-events-none' : 'opacity-1 pointer-events-auto'} z-10 absolute w-full -bottom-80 flex text-sm shadow-2xl rounded-lg border border-gray-200 p-3 bg-white transition-opacity`}>
           <div className='flex-1 flex gap-10'>
             <h2 className='font-bold'>Men</h2>
             <div className='flex flex-col gap-3'>
