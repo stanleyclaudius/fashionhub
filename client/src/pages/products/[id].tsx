@@ -3,6 +3,8 @@ import { RxCaretDown } from 'react-icons/rx'
 import HeadInfo from './../../utils/HeadInfo'
 import Navbar from './../../components/general/Navbar'
 import Footer from './../../components/general/Footer'
+import CommentBox from './../../components/products/CommentBox'
+import ProductCard from '../../components/general/ProductCard'
 
 const ProductDetail = () => {
   return (
@@ -92,6 +94,37 @@ const ProductDetail = () => {
                 <RxCaretDown />
               </div>
             </div>
+          </div>
+          <div>
+            <div className='p-7 border border-gray-300 rounded-md mt-9 flex flex-col gap-10'>
+              <CommentBox />
+              <CommentBox />
+              <CommentBox />
+              <CommentBox />
+              <CommentBox />
+            </div>
+            <div className='text-sm flex items-center justify-center mt-9'>
+              <button className='bg-white rounded-md px-4 py-3 text-sm border border-gray-300 text-gray-400 outline-none mr-5'>Previous</button>
+              <div className='flex items-center gap-2'>
+                <button className='w-10 h-10 bg-gray-200 rounded-md'>1</button>
+                <button className='w-10 h-10 rounded-md'>2</button>
+                <button className='w-10 h-10 rounded-md'>3</button>
+              </div>
+              <button className='ml-5 bg-white text-black rounded-md px-4 py-2 text-sm border border-gray-300 font-bold outline-none'>Next</button>
+            </div>
+          </div>
+          <div className='mt-10 border border-gray-300 p-5 rounded-md'>
+            <textarea name='discussion' id='discussion' placeholder='Question/topic' className='outline-none text-sm resize-none bg-gray-100 p-3 w-full h-32 rounded-lg border border-gray-300' />
+            <button className='bg-black text-white rounded-md font-bold px-5 py-3 text-sm mt-4'>Start Discussion</button>
+          </div>
+        </div>
+        <div className='mt-12'>
+          <h1 className='font-bold text-xl'>Related Products</h1>
+          <div className='grid grid-cols-4 gap-12 mt-6'>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </div>
