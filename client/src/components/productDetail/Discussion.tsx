@@ -1,5 +1,5 @@
 import { RxCaretDown } from "react-icons/rx"
-import CommentBox from "../products/CommentBox"
+import CommentBox from "./CommentBox"
 import Pagination from "../general/Pagination"
 
 const Discussion = () => {
