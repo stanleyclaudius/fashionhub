@@ -8,7 +8,7 @@ const Cart = () => {
   return (
     <>
       <HeadInfo title='Cart' />
-      <div className='mx-36 m-8'>
+      <div className='mx-36 my-8'>
         <Navbar />
         <div className='mt-12 flex gap-16'>
           <ItemDetail />
